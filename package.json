@@ -1,0 +1,24 @@
+{
+  "name": "time-stamp-microservice",
+  "version": "1.0.0",
+  "description": "### User Stories (WIP):",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coreyjsax/time-stamp-microservice.git"
+  },
+  "author": "Corey Sax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coreyjsax/time-stamp-microservice/issues"
+  },
+  "homepage": "https://github.com/coreyjsax/time-stamp-microservice#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
