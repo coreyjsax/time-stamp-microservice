@@ -1,20 +1,23 @@
 const frontEndController = () => {
+    
     const app = document.getElementById('app');
     const modal = app.querySelector('.mymodal');
     
     app.addEventListener('click', (event) => {
 
         let target = event.target;
-        console.log(target)
+       
         if (target.matches('.modalTrigger')){
             modalInit(target);
         } else if (target.matches('.delete')){
              toggleModal()  
         }
+        
     })
     
     
     const modalInit = (target) => {
+        
         let contentDest = modal.querySelector('.modal_content');
         let time = target.parentElement.parentElement.querySelector('.control').querySelector('input').value;
         
@@ -24,15 +27,13 @@ const frontEndController = () => {
             console.log(time)
             contentDest.innerHTML = message;
             toggleModal(time)
-            
         });
         
-        
-         
     }
     
     function setMessage(time){
         if (!time.error){
+            
             let message = `
                 <article class="message">
                     <div class="message-header">
@@ -53,8 +54,11 @@ const frontEndController = () => {
                     </div>
                 </article>
             `;
+            
         return message;
+        
         } else {
+            
             let message = `
                 <article class="message">
                     <div class="message-header">
@@ -74,11 +78,10 @@ const frontEndController = () => {
                     </div>
                 </article>
             `;
+            
         return message;
+        
         }
-        
-        
-    
     }
     
     function toggleModal() {
@@ -123,7 +126,6 @@ const frontEndController = () => {
             return timeStamp;
         })
     }
-    
     
 }
 
