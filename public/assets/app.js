@@ -102,7 +102,7 @@ const frontEndController = () => {
     }
     
     function getData(time){
-        let baseUrl = `https://microservice-timestamp-coreyjsax.c9users.io/api/timestamp`;
+        let baseUrl = `https://microservice-timestamp-cjs.herokuapp.com/api/timestamp`;
         let url = `${baseUrl}/${time}`
         return fetch(url)
         .then((res) => {
